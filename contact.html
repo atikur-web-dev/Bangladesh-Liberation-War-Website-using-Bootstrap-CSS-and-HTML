@@ -79,7 +79,11 @@
           <!-- Contact Form (Left) -->
           <div class="col-lg-6 mb-5 mb-lg-0">
             <h3 class="mb-4">Send us a Message</h3>
-            <form id="contactForm" novalidate>
+            <form
+              id="contactForm"
+              novalidate
+              onsubmit="alert(`Submit successfully`)"
+            >
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name *</label>
                 <input type="text" class="form-control" id="name" required />
