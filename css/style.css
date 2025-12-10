@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Logo */
+.navbar-brand img {
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/ban.jpg') center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.icon-box {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.border-top {
+    border-top-width: 5px !important;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #000, #333);
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Introduction Section */
+#intro {
+    background-color: #f8f9fa;
+}
+/* Documents Page Specific Styles */
+.doc-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/ban.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.category-section {
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: #2c3e50;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+}
+
+.document-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #2c3e50;
+    color: white;
+}
+
+/* Interviews Page Specific Styles */
+.interview-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/ban.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.interview-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.interview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.interview-text {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.interview-text p {
+    margin-bottom: 1rem;
+}
+
+.modal-body .interview-text p strong {
+    color: #2c3e50;
+}
+
+/* Gallery Page Specific Styles */
+.gallery-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/ban.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .card-img-container img {
+    transform: scale(1.1);
+}
+
+.card-img-overlay {
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-img-overlay .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-card .card-body {
+    padding: 1.5rem;
+}
+
+.gallery-card .card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+}
+
+.gallery-card .card-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.view-btn {
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+}
+
+.filter-btn.active {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #2c3e50;
+    color: white;
+}
+
+.modal-body img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* Contact Page Header */
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/ban.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}

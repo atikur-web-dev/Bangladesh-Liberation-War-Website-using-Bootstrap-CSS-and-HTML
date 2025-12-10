@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery | Bangladesh Liberation War Archive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img
+            src="./images/Muktibahini.jpg"
+            alt="Muktibahini Logo"
+            height="50"
+            class="rounded-circle me-2"
+          />
+          বাংলাদেশ মুক্তিযুদ্ধ আর্কাইভ
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html"
+                ><i class="fas fa-file-alt"></i> Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interviews.html"
+                ><i class="fas fa-microphone-alt"></i> Interviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="gallery-header text-white py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Photographs from 1971</h1>
+        <p class="lead fs-4">
+          A visual journey through the Liberation War of Bangladesh
+        </p>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container">
+        <!-- Gallery Intro -->
+        <div class="row mb-5">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="mb-4">Capturing History Through Lens</h2>
+            <p class="fs-5">
+              This gallery features rare photographs documenting key moments,
+              places, and people from the Bangladesh Liberation War. Each image
+              tells a story of sacrifice, resilience, and the struggle for
+              freedom.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo Gallery - ALL 12 CARDS VISIBLE -->
+        <div class="row g-4">
+          <!-- Photo 1 - Events -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Victory Day Celebration.jpg"
+                  class="card-img-top"
+                  alt="Victory Day Celebration"
+                />
+                <div class="card-img-overlay d-flex align-items-end"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Victory Day Celebration</h5>
+                <p class="card-text">
+                  December 16, 1971 celebration at Suhrawardy Udyan marking
+                  Bangladesh's independence.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> Dec 16, 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal1"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 2 - People -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="people">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Muktibahini Fighter.jpg"
+                  class="card-img-top"
+                  alt="Freedom Fighter"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Muktibahini Fighter</h5>
+                <p class="card-text">
+                  A young freedom fighter with a rifle during training in India
+                  border camps.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> August 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal2"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 3 - Places -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="places">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/damage.jpg"
+                  class="card-img-top"
+                  alt="War Damaged Building"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Damaged Dhaka University</h5>
+                <p class="card-text">
+                  Architectural destruction at Dhaka University after Operation
+                  Searchlight.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> March 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal3"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 4 - Events -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/refuge.jpg"
+                  class="card-img-top"
+                  alt="Refugee Camp"
+                />
+                <div class="card-img-overlay d-flex align-items-end"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Refugee Camp in India</h5>
+                <p class="card-text">
+                  Bangladeshi refugees at a camp along the Indian border
+                  receiving aid.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> June 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal4"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 5 - Military -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="military">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Guerrilla Training Camp.jpg"
+                  class="card-img-top"
+                  alt="Military Training"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Guerrilla Training Camp</h5>
+                <p class="card-text">
+                  Muktibahini fighters receiving military training in border
+                  areas.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> July 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal5"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 6 - Civilian -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="civilian">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Civilian Resistance Meeting.jpg"
+                  class="card-img-top"
+                  alt="Civilian Resistance"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Civilian Resistance Meeting</h5>
+                <p class="card-text">
+                  Villagers planning local resistance against Pakistani forces.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> April 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal6"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 7 - Events -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/sur.jpg"
+                  class="card-img-top"
+                  alt="Surrender Ceremony"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Surrender Ceremony</h5>
+                <p class="card-text">
+                  Pakistani General Niazi signing surrender documents on Dec 16,
+                  1971.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> Dec 16, 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal7"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 8 - People -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="people">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Bangabandhu's Historic Speech.jpg"
+                  class="card-img-top"
+                  alt="Bangabandhu Speech"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bangabandhu's Historic Speech</h5>
+                <p class="card-text">
+                  Sheikh Mujibur Rahman addressing millions at Ramna Race
+                  Course.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> March 7, 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal8"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 9 - Places -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="places">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Liberation War Museum.jpg"
+                  class="card-img-top"
+                  alt="War Memorial"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Liberation War Museum</h5>
+                <p class="card-text">
+                  Early days of the museum preserving artifacts from the
+                  liberation war.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> 1973</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal9"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 10 - Military -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="military">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/Battle of Kushtia.jpg"
+                  class="card-img-top"
+                  alt="Battle Scene"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Battle of Kushtia</h5>
+                <p class="card-text">
+                  Muktibahini fighters during the liberation of Kushtia town.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> October 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal10"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 11 - Civilian -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="civilian">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/civl.jpg"
+                  class="card-img-top"
+                  alt="Medical Aid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Field Medical Camp</h5>
+                <p class="card-text">
+                  Volunteer doctors treating wounded civilians near combat
+                  zones.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> September 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal11"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 12 - Events -->
+          <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+            <div class="card gallery-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="./images/First Flag Hoisting.jpg"
+                  class="card-img-top"
+                  alt="Flag Hoisting"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">First Flag Hoisting</h5>
+                <p class="card-text">
+                  Bangladesh flag being raised for the first time in liberated
+                  areas.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"
+                    ><i class="fas fa-calendar"></i> December 1971</small
+                  >
+                  <button
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal12"
+                  >
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALL 12 MODALS (COMPLETE) -->
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="photoModal1" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Victory Day Celebration</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Victory Day Celebration.jpg"
+                      class="img-fluid rounded"
+                      alt="Victory Day"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      This historic photograph captures the victory celebration
+                      at Suhrawardy Udyan on December 16, 1971, following the
+                      surrender of Pakistani forces.
+                    </p>
+                    <p><strong>Category:</strong> Events</p>
+                    <p><strong>Date:</strong> December 16, 1971</p>
+                    <p><strong>Location:</strong> Suhrawardy Udyan, Dhaka</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="photoModal2" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Muktibahini Fighter</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Muktibahini Fighter.jpg"
+                      class="img-fluid rounded"
+                      alt="Freedom Fighter"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      A young Muktibahini fighter poses with his rifle at a
+                      training camp near the India-Bangladesh border in August
+                      1971.
+                    </p>
+                    <p><strong>Category:</strong> People</p>
+                    <p><strong>Date:</strong> August 1971</p>
+                    <p><strong>Location:</strong> Border Training Camp</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="photoModal3" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Damaged Dhaka University</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/damage.jpg"
+                      class="img-fluid rounded"
+                      alt="Damaged Building"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Architectural destruction at Dhaka University after
+                      Operation Searchlight in March 1971.
+                    </p>
+                    <p><strong>Category:</strong> Places</p>
+                    <p><strong>Date:</strong> March 1971</p>
+                    <p><strong>Location:</strong> Dhaka University</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="modal fade" id="photoModal4" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Refugee Camp in India</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/refuge.jpg"
+                      class="img-fluid rounded"
+                      alt="Refugee Camp"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Bangladeshi refugees at a camp along the Indian border
+                      receiving humanitarian aid in June 1971.
+                    </p>
+                    <p><strong>Category:</strong> Events</p>
+                    <p><strong>Date:</strong> June 1971</p>
+                    <p><strong>Location:</strong> Indian Border</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div class="modal fade" id="photoModal5" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Guerrilla Training Camp</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Guerrilla Training Camp.jpg"
+                      class="img-fluid rounded"
+                      alt="Military Training"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Muktibahini fighters receiving military training in border
+                      areas during July 1971.
+                    </p>
+                    <p><strong>Category:</strong> Military</p>
+                    <p><strong>Date:</strong> July 1971</p>
+                    <p><strong>Location:</strong> Training Camp</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 6 -->
+        <div class="modal fade" id="photoModal6" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Civilian Resistance Meeting</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Civilian Resistance Meeting.jpg"
+                      class="img-fluid rounded"
+                      alt="Civilian Resistance"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Villagers planning local resistance against Pakistani
+                      forces in April 1971.
+                    </p>
+                    <p><strong>Category:</strong> Civilian Life</p>
+                    <p><strong>Date:</strong> April 1971</p>
+                    <p><strong>Location:</strong> Rural Bangladesh</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 7 -->
+        <div class="modal fade" id="photoModal7" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Surrender Ceremony</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/sur.jpg"
+                      class="img-fluid rounded"
+                      alt="Surrender Ceremony"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Pakistani General Niazi signing surrender documents on
+                      December 16, 1971.
+                    </p>
+                    <p><strong>Category:</strong> Events</p>
+                    <p><strong>Date:</strong> December 16, 1971</p>
+                    <p><strong>Location:</strong> Ramna Race Course</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 8 -->
+        <div class="modal fade" id="photoModal8" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Bangabandhu's Historic Speech</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Bangabandhu's Historic Speech.jpg"
+                      class="img-fluid rounded"
+                      alt="Bangabandhu Speech"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Sheikh Mujibur Rahman addressing millions at Ramna Race
+                      Course on March 7, 1971.
+                    </p>
+                    <p><strong>Category:</strong> People</p>
+                    <p><strong>Date:</strong> March 7, 1971</p>
+                    <p><strong>Location:</strong> Ramna Race Course</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 9 -->
+        <div class="modal fade" id="photoModal9" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Liberation War Museum</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Liberation War Museum.jpg"
+                      class="img-fluid rounded"
+                      alt="War Memorial"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Early days of the Liberation War Museum preserving
+                      artifacts in 1973.
+                    </p>
+                    <p><strong>Category:</strong> Places</p>
+                    <p><strong>Date:</strong> 1973</p>
+                    <p><strong>Location:</strong> Dhaka</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 10 -->
+        <div class="modal fade" id="photoModal10" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Battle of Kushtia</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/Battle of Kushtia.jpg"
+                      class="img-fluid rounded"
+                      alt="Battle Scene"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Muktibahini fighters during the liberation of Kushtia town
+                      in October 1971.
+                    </p>
+                    <p><strong>Category:</strong> Military</p>
+                    <p><strong>Date:</strong> October 1971</p>
+                    <p><strong>Location:</strong> Kushtia</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 11 -->
+        <div class="modal fade" id="photoModal11" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Field Medical Camp</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/civl.jpg"
+                      class="img-fluid rounded"
+                      alt="Medical Aid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Volunteer doctors treating wounded civilians near combat
+                      zones in September 1971.
+                    </p>
+                    <p><strong>Category:</strong> Civilian Life</p>
+                    <p><strong>Date:</strong> September 1971</p>
+                    <p><strong>Location:</strong> Border Area</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 12 -->
+        <div class="modal fade" id="photoModal12" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">First Flag Hoisting</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img
+                      src="./images/First Flag Hoisting.jpg"
+                      class="img-fluid rounded"
+                      alt="Flag Hoisting"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Photo Details:</h6>
+                    <p>
+                      Bangladesh flag being raised for the first time in
+                      liberated areas in December 1971.
+                    </p>
+                    <p><strong>Category:</strong> Events</p>
+                    <p><strong>Date:</strong> December 1971</p>
+                    <p><strong>Location:</strong> Liberated Zone</p>
+                    <div class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+      <div class="container">
+        <p class="text-center mb-0">
+          &copy; 2024 Bangladesh Liberation War Archive. All rights reserved. |
+          Made with <i class="fas fa-heart text-danger"></i> for Bangladesh
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
